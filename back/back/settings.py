@@ -82,8 +82,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'movie_box',
-        'USER': 'root',
-        'PASSWORD': 'yousof1384'
+        'USER': 'Your Username',
+        'PASSWORD': 'Your Password'
     }
 }
 
