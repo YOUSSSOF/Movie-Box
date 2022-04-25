@@ -1,0 +1,279 @@
+.home {
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    padding: 0 5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8), 0px 0px 2px rgba(0, 0, 0, 1);
+}
+
+/* NavBar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: .8rem;
+    margin-bottom: 5rem;
+}
+
+.base-logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: transform .5s;
+}
+
+.base-logo :hover {
+    transform: scale(1.1);
+    color: rgb(197, 0, 0);
+}
+
+.main-logo {
+    height: 3.3rem;
+    width: 3.3rem;
+    margin-right: 1.5rem;
+}
+
+.navber {
+    background-color: transparent;
+}
+
+.navbar .search, input {
+    color: white;
+    background: transparent;
+    height: 2rem;
+    width: 40rem;
+}
+
+.navbar .search input {
+    border: 0;
+}
+
+.navbar .search {
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    border: 3px solid white;
+    padding: .5rem 1rem;
+
+}
+
+input:focus {
+    outline: white;
+}
+
+::placeholder {
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Dm Sans';
+    color: white;
+    opacity: 1;
+}
+
+.auth-logo {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-left: 1.5rem;
+}
+
+
+
+/* Hero Section */
+
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.movie-info {
+    max-width: 25rem;
+    flex-grow: 1;
+}
+
+.movie-name {
+    font-size: 3.8rem;
+    margin: 0;
+}
+
+.rate {
+    margin: 1.5rem 0;
+}
+
+.rate, .imdb, .rotten {
+    display: flex;
+    align-items: center;
+}
+
+.rate-num {
+    margin: 0 3rem 0 .6rem;
+}
+
+.desc {
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+.hero button {
+    font-family: 'Dm Sans';
+    font-size: medium;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 900;
+    background-color: #be123c;
+    border: 0;
+    padding: .7rem 1.1rem;
+    border-radius: .6rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: transform .08s;
+}
+
+.hero button:hover {
+    background-color: #ab1036;
+    transform: scale(1.03);
+}
+
+.hero button img {
+    margin-right: .3rem;
+}
+
+
+
+/* Responsiveness */
+
+@media screen and (max-width:1170px) {
+    .home {
+        padding: 0 2rem;
+    }
+
+    .navbar .search {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width:756px) {
+
+    .home {
+        padding: 1rem;
+    }
+
+    .navbar {
+        margin-bottom: 10rem;
+    }
+
+    .navbar .search {
+        width: 10rem;
+    }
+    .navbar .search .icon {
+        display: none;
+    }
+
+    ::placeholder {
+        font-size: smaller;
+    }
+
+    .navbar h1, h3 {
+        display: none;
+    }
+
+    .movie-name {
+        font-size: 2.8rem;
+    }
+
+    .desc {
+        font-size: .9rem;
+    }
+}
+
+/* Movie Card */
+
+
+.movie-card {
+    text-shadow: none;
+    color: initial;
+    width: 15rem;
+    position: relative;
+}
+
+.movie-card .content :hover {
+    transform: scale(1.1);
+}
+
+.movie-card .poster {
+    width: inherit;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.movie-card .yc {
+    font-weight: bolder;
+    font-size: smaller;
+    opacity: .4;
+    margin: 0;
+}
+
+.movie-card .title {
+    font-weight: 500;
+    margin: .8rem 0 .7rem 0;
+    font-size: 1.3rem;
+}
+
+.movie-card .rate {
+    margin: 0;
+}
+
+.movie-card .rate-num {
+    margin: 0 0 0 .5rem;
+    font-size: small;
+}
+
+.movie-card .imdb {
+    flex-grow: 1;
+}
+
+.movie-card .genres {
+    display: flex;
+}
+
+.movie-item {
+    transition: transform .1s;
+}
+
+.movie-item:hover {
+    cursor: pointer;
+    transform: scale(1.05) translateY(-2%);
+}
+
+.heart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    top: 1rem;
+    right: 1rem;
+    color: white;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 100%;
+    padding: .5rem .5rem;
+}
+
+/* Slider */
+
+.slider {
+    margin: 6rem 0;
+    width: 100%;
+}
+
+.slider--title {
+    text-shadow: none;
+    color: initial;
+    margin-bottom: 3rem;
+}
+
+.slider .content {
+    display: flex;
+}

@@ -1,0 +1,135 @@
+.movie-detail {
+    padding: 0 5rem;
+}
+
+.movie-detail .detail-hero {
+    display: flex;
+    align-items: center;
+    max-width: 90%;
+}
+
+.movie-detail .navbar {
+    margin-bottom: 5rem;
+}
+
+
+.movie-detail .navbar input {
+    border-color: initial;
+}
+
+.movie-detail .poster {
+    height: 43rem;
+    min-width: 30rem;
+    object-fit: cover;
+    margin-right: 5rem;
+}
+
+.movie-detail .info {
+    width: 100%;
+}
+
+.movie-detail .genres {
+    display: flex;
+    opacity: .5;
+}
+
+/* Reviews */
+
+.reviews {
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.reviews h1 {
+    font-size: 3rem;
+    opacity: .8;
+    margin-bottom: 3rem;
+}
+
+.reviews .leave-comment {
+    padding: 3rem;
+    border: 2px solid rgb(197, 0, 0);
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width:900px) {
+    .movie-detail {
+        padding: 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+
+    }
+
+    .navbar input {
+        width: 20rem;
+    }
+
+    .detail-hero {
+        flex-direction: column;
+        width: 30rem;
+    }
+
+    .movie-detail .poster {
+        object-position: top;
+        height: 43rem;
+        width: 100%;
+        margin: 0;
+    }
+
+    .movie-detail .review-detail {
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width:756px) {
+
+    .navbar {
+        margin-bottom: 10rem;
+    }
+
+    .navbar input {
+        width: 10rem;
+    }
+
+    ::placeholder {
+        font-size: smaller;
+    }
+
+    .navbar h1, h3 {
+        display: none;
+    }
+
+    .movie-name {
+        font-size: 2.8rem;
+    }
+
+    .desc {
+        font-size: .9rem;
+    }
+
+    .movie-detail {
+        justify-content: center;
+    }
+
+    .movie-detail .poster {
+        width: 100%;
+        margin: 0;
+    }
+
+    .detail-hero {
+        flex-direction: column;
+    }
+
+    .movie-detail .review-detail {
+        width: 10rem;
+    }
+}
